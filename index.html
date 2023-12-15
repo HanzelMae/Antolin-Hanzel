@@ -6,21 +6,29 @@
     <title>Image in Top Left Corner</title>
     <style>
         body {
-            margin: 500;
-            padding: 500;
+            margin: 0;
+            padding: 0;
             overflow: hidden;
         }
 
         #image-container {
             position: absolute;
-            top: 500;
-            left: 500;
+            top: 0;
+            left: 0;
+            width: 100px; /* Adjust the width as needed */
+            height: 100px; /* Adjust the height as needed */
+        }
+
+        #image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio while covering the container */
         }
     </style>
 </head>
 <body>
     <div id="image-container">
-        <img src="C:\Users\Asus\Downloads\306266761_473246588149598_8631279150588065285_n (1).jpg" alt=>
+        <img src="C:\Users\Asus\Downloads\306266761_473246588149598_8631279150588065285_n (1).jpg" alt="Your Image">
     </div>
 </body>
 </html>
